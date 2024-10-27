@@ -1,13 +1,11 @@
 import './App.css';
 import { Navbar } from './Components/Navbar/Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Aboutus from './Pages/Aboutus'; // Correct import
-import WhatWeDo from './Pages/WhatWeDo'; // Create this component
-import TheTeam from './Pages/TheTeam'; // Create this component
+import Aboutus from './Pages/Aboutus';
 import Home from './Pages/Home';
-import Login from './Pages/Login';
-import Category from './Pages/Category';
-
+import Volunteer from './Pages/Volunteer';
+import Ourimpact from './Pages/Ourimpact';
+import Periodtracker from './Pages/Periodtracker';
 function App() {
   return (
     <div>
@@ -16,10 +14,10 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/aboutus' element={<Aboutus />} />
-          <Route path='/what-we-do' element={<WhatWeDo />} />
-          <Route path='/the-team' element={<TheTeam />} />
-          <Route path='/login' element={<Login />} />
-          <Route path='/category' element={<Category />} />
+          <Route path='/volunteer' element={<Volunteer/>}/>
+          <Route path='/ourimpact' element={<Ourimpact/>}/>
+          <Route path='/periodtracker' element={<Periodtracker/>}/>
+ 
         </Routes>
       </Router>
     </div>
@@ -27,3 +25,5 @@ function App() {
 }
 
 export default App;
+
+

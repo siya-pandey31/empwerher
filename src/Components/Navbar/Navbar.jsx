@@ -23,12 +23,12 @@ export const Navbar = () => {
           <Link style={{ textDecoration: 'none' }} to='/aboutus'>ABOUT US</Link>
           {menu === "aboutus" ? <hr /> : <></>}
         </li>
-        <li onClick={() => { setMenu("impactus") }}>
-          <Link style={{ textDecoration: 'none' }} to='/impactus'> OUR IMPACT </Link>
-          {menu === "impactus" ? <hr /> : <></>}
+        <li onClick={() => { setMenu("ourimpact") }}>
+          <Link style={{ textDecoration: 'none' }} to='/ourimpact'> OUR IMPACT </Link>
+          {menu === "ourimpact" ? <hr /> : <></>}
         </li>
         <li onClick={() => { setMenu("volunteer") }}>
-          <Link style={{ textDecoration: 'none' }} to='/'>VOLUNTEER</Link>
+          <Link style={{ textDecoration: 'none' }} to='/volunteer'>VOLUNTEER</Link>
           {menu === "volunteer" ? <hr /> : <></>}
         </li>
         <li onClick={() => { setMenu("periodtracker") }}>
