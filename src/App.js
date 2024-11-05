@@ -6,6 +6,8 @@ import Home from './Pages/Home';
 import Volunteer from './Pages/Volunteer';
 import Ourimpact from './Pages/Ourimpact';
 import Periodtracker from './Pages/Periodtracker';
+import Contact from './Pages/Contact';
+import Login from './Pages/Login';
 function App() {
   return (
     <div>
@@ -17,6 +19,8 @@ function App() {
           <Route path='/volunteer' element={<Volunteer/>}/>
           <Route path='/ourimpact' element={<Ourimpact/>}/>
           <Route path='/periodtracker' element={<Periodtracker/>}/>
+          <Route path='/contact' element={<Contact/>}/>
+          <Route path='/contact' element={<Login/>}/>
  
         </Routes>
       </Router>
