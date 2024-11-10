@@ -22,6 +22,7 @@ import janas from '../Assets/janas.png'
 import { FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
+import logo from '../Assets/logo.png';
 
 
 export const Hero = () => {
@@ -37,7 +38,7 @@ export const Hero = () => {
   return (
     <div className='hero'>
       <div className="hero-left"data-aos="fade-right">
-     <div className="banner">
+     <div className="banner"data-aos="fade-right">
       <img src={banner} alt="Women participating in menstruation awareness activities" />
       </div>
         <h2>Creating Awareness on Shame-Free and Pain-Free Menstruation</h2>
@@ -88,13 +89,9 @@ export const Hero = () => {
     <img src={janas} alt="Women participating in menstruation awareness activities" className="janas-image" />
   </a>
 </div>
-
-
-
-
-<section className="blog">
-  <div className="blog-content">
-    <div className="blog-text">
+<section className="blog"data-aos="fade-up">
+  <div className="blog-content"data-aos="fade-up">
+    <div className="blog-text"data-aos="fade-up">
       <h1>Menstrual Health and Hygiene Awareness Workshops</h1>
       <h3>Educating & Empowering</h3>
       <p>MHH workshops are creatively designed for school girls (9-18 yrs) and college students, aiming to create Shame-Free and Pain-Free Periods.</p>
@@ -103,31 +100,37 @@ export const Hero = () => {
             {showInfoBoxes ? 'Show Less' : 'Know More'}
           </button>
         </div>
-        <div className="blog-photo">
-          <img src={salwi} alt="Campaign Photo" className="campaign-photo" style={{ width: '500px', height: 'auto' }} />
+        <div className="blog-photo"data-aos="fade-up">
+          <img src={hemant3} alt="Campaign Photo" className="campaign-photo"  />
         </div>
       </div>
 
-     
-      {showInfoBoxes && (
-        <div className="info-boxes">
-          <div className="info-box">
+
+  {showInfoBoxes && (
+  <div className="info-boxes"data-aos="fade-up">
+          <div className="info-box"data-aos="fade-up">
             <h2>Menstruation</h2>
             <p>Menstruation, or period, is normal vaginal bleeding that occurs as part of a woman's monthly cycle...</p>
-          </div>
-          <div className="info-box">
+            </div>
+          <div className="info-box"data-aos="fade-up">
             <h2>Menopause</h2>
             <p>Menopause is the time in a woman's life when her periods (menstruation) stop, usually occurring between ages 45 to 55...</p>
           </div>
-          <div className="info-box">
+          <div className="info-box"data-aos="fade-up">
             <h2>Menarche</h2>
             <p>Menarche is defined as the first menstrual period in a female adolescent, typically occurring between the ages of 10 and 16...</p>
           </div>
-        </div>
-      )}
-    </section>
+        </div>
+      )}
+      
+     
+</section>
 
-        <section className="blog1">
+
+
+
+
+        <section className="blog1"data-aos="fade-up">
         <div className="blog-content1">
         <div className="blog-text1">
   
@@ -141,13 +144,13 @@ export const Hero = () => {
             {showInfoBoxes ? 'Show Less' : 'Know More'}
           </button>
           </div>
-  <div className="blog-photo1">
+  <div className="blog-photo1"data-aos="fade-up">
     <img src={hemant3} alt="Campaign Photo" className="campaign-photo" />
   </div>
   </div>
 
   {showInfoBoxes && (
-  <div className="info-boxes">
+  <div className="info-boxes"data-aos="fade-up">
           <div className="info-box">
             <h2>Menstrual Hygiene Day – May 28</h2>
             <p>Each year on May 28, Menstrual Hygiene Day is observed to highlight good menstrual hygiene practices during your period and to raise awareness about the importance of access to menstrual products, period education, and sanitation facilities.</p>
@@ -172,7 +175,7 @@ export const Hero = () => {
 </section>
   
 
-<section className="blog2">
+<section className="blog2"data-aos="fade-up">
 <div className="blog-content2">
 <div className="blog-text2">
     <h1>Establishing a menstrual-friendly environment</h1>
@@ -182,7 +185,7 @@ export const Hero = () => {
             {showInfoBoxes ? 'Show Less' : 'Know More'}
           </button>
           </div>
-  <div className="blog-photo2">
+  <div className="blog-photo2"data-aos="fade-up">
     <img src={rishav} alt="Campaign Photo" className="campaign-photo" />
   </div>
   </div>
@@ -211,28 +214,7 @@ export const Hero = () => {
 </section>
  
   
-  <div className="hero-right"data-aos="fade-up">
-        
-      </div>
-
-      <div className="contact-section">
-        <h2>Workshops done on</h2>
-        <h2>19th June</h2>
-        <img src={Donation1} alt="Donation event 1" />
-        <img src={Donation2} alt="Donation event 2" />
-        <img src={Donation3} alt="Donation event 3" />
-        <img src={Donation4} alt="Donation event 4" />
-        
-        <form>
-          <h2>Get in touch with us</h2>
-          <input type="text" placeholder="First Name" required />
-          <input type="text" placeholder="Last Name" required />
-          <input type="email" placeholder="Email Address" required />
-          <input type="text" placeholder="Subject" required />
-          <textarea placeholder="Message" required></textarea>
-          <button type="submit">Contact us</button>
-        </form>
-      </div>
+ 
 
       <section className="testimonials">
         <h2>What People Are Saying</h2>
@@ -249,16 +231,18 @@ export const Hero = () => {
       <section className="call-to-action">
         <h2>Help Us Reach More Women</h2>
         <p>Your support can help us expand our impact and empower more women. Donate today!</p>
-        <button className="donate-button">Donate Now</button>
+        <button className="donate-button">Contact Now</button>
       </section>
 
-      <footer className="footer-container"data-aos="fade-right">
+      <footer className="footer-container">
       <div className="footer-main">
        
         <div className="footer-left">
-          
+          <div className="footer-logo">
+            <img src={logo} alt="Safe N' Happy Periods Logo"style={{ width: '50px', height: 'auto' }}  />
+          </div>
           <p className="footer-description">
-            Safe N' Happy Periods aims to foster a shame-free, dignified, and sustainable menstruation experience for women. By combining education and pad distribution, we raise awareness and improve access to sanitation.
+           Empower Her aims to foster a shame-free, dignified, and sustainable menstruation experience for women. By combining education and pad distribution, we raise awareness and improve access to sanitation.
           </p>
           <div className="social-icons">
           <h3>Follow Us</h3>

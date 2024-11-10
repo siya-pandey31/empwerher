@@ -43,12 +43,12 @@ export const Navbar = () => {
           <Link style={{ textDecoration: 'none' }} to='/contact'>CONTACT</Link>
           {menu === "contact" ? <hr /> : <></>}
         </li>
+        <li onClick={() => { setMenu("login") }}>
+          <Link style={{ textDecoration: 'none' }} to='/login'><button>Login</button></Link>
+          {menu === "login" ? <hr /> : <></>}
+        </li>
       </ul>
-      <div className="nav-login">
-        <Link to='/login'>
-          <button>Login</button>
-        </Link>
       </div>
-    </div>
+   
   )
 }

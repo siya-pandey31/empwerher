@@ -1,0 +1,74 @@
+.volunteer-container {
+    font-family: Arial, sans-serif;
+    color: #333;
+    max-width: 1700px;
+    margin: auto;
+    padding: 20px;
+    background: linear-gradient(180deg,#fde1ff,#e1ffea22 60%);
+
+  }
+  
+  .volunteer-header {
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .volunteer-info, .volunteer-testimonials, .volunteer-faq {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  .info-section {
+    margin-bottom: 20px;
+  }
+  
+  .info-section ul {
+    list-style: disc inside;
+    padding-left: 20px;
+  }
+  
+  .volunteer-form {
+    margin-top: 20px;
+  }
+  
+  .volunteer-testimonials h2, .volunteer-faq h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial {
+    font-style: italic;
+    padding: 10px;
+    border-left: 4px solid #007acc;
+    margin: 10px 0;
+  }
+  
+  .cite {
+    display: block;
+    text-align: right;
+    margin-top: 5px;
+    color: #555;
+  }
+  
+  .faq-item {
+    margin-bottom: 15px;
+  }
+  
+  .faq-item h3 {
+    font-size: 1.1em;
+    color: #007acc;
+  }
+  
+  .faq-item p {
+    margin: 5px 0;
+  }
+  
+  .volunteer-footer {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+    color: #555;
+  }
+  

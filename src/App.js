@@ -20,7 +20,9 @@ function App() {
           <Route path='/ourimpact' element={<Ourimpact/>}/>
           <Route path='/periodtracker' element={<Periodtracker/>}/>
           <Route path='/contact' element={<Contact/>}/>
-          <Route path='/contact' element={<Login/>}/>
+          <Route path='/login' element={<Login/>}/>
+          <Route path="/" element={<Aboutus />} /> {/* Default page */}
+          <Route path="/volunteer" element={<Volunteer />} /> {/* Volunteer page */}
  
         </Routes>
       </Router>

@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+
 import './CSS/Aboutus.css';
 import { FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Slider from 'react-slick';
 
 import logo from '../Components/Assets/logo.png';
 import hemant3 from '../Components/Assets/hemant3.jpg';
@@ -33,36 +36,19 @@ const Aboutus = () => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
-  return (
-    <div className="outer-container"data-aos="fade-right">
-    <div className="container">
-      <div className="textSection">
-        <h1 className="title">Pain</h1>
-        <h2 className="subtitle">Free Menstruation</h2>
-        <p className="description">
-          Empower her is a project based on mensuration awareness and educational campaign .
-          Our mission is to empower women, fostering positive transformation, joy, and freedom.
-        </p>
-        
-        <div className="buttons">
-          <button className="button" aria-label="Donate Now">Login</button>
-          <button className="button" aria-label="Play Video">Play</button>
-        </div>
-        <div className="footerIcons">
-          <div className="icon">Workshops</div>
-          <div className="icon">Contact</div>
-          <div className="icon">Volunteering</div>
-        </div>
-      </div>
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  };
 
-      <div className="imageGallery">
-        <img src={hemant3} alt="Empower Her Workshop - Event 1" className="image" />
-        <img src={salwi} alt="Empower Her Workshop - Event 2" className="image" />
-        <img src={rishav} alt="Empower Her Workshop - Event 3" className="image" />
-       
-        
-      </div>
-      </div>
+
+  return (
+    
 
       <div className="aboutus-container">
         <div className="aboutus-box" data-aos="fade-right">
@@ -110,6 +96,36 @@ const Aboutus = () => {
         <div>
           <h2>Get informed now. Answers to your common questions</h2>
         </div>
+        <div className="outer-container"data-aos="fade-right">
+    <div className="container">
+      <div className="textSection">
+        <h1 className="title">Pain</h1>
+        <h2 className="subtitle">Free Menstruation</h2>
+        <p className="description">
+          Empower her is a project based on mensuration awareness and educational campaign .
+          Our mission is to empower women, fostering positive transformation, joy, and freedom.
+        </p>
+        
+        <div className="buttons">
+          <button className="button" aria-label="Donate Now">Login</button>
+          <button className="button" aria-label="Play Video">Play</button>
+        </div>
+        <div className="footerIcons">
+          <div className="icon">Workshops</div>
+          <div className="icon">Contact</div>
+           <Link to="/volunteer" className="icon">Volunteering</Link>
+        </div>
+      </div>
+
+      <div className="imageGallery">
+        <img src={hemant3} alt="Empower Her Workshop - Event 1" className="image" />
+        <img src={salwi} alt="Empower Her Workshop - Event 2" className="image" />
+        <img src={rishav} alt="Empower Her Workshop - Event 3" className="image" />
+       
+        
+      </div>
+      </div>
+
 
         <div className="faq-section" data-aos="fade-right">
           <h2 className="faq-heading">Frequently Asked Questions</h2>
@@ -163,7 +179,7 @@ const Aboutus = () => {
                 </div>
               </div>
             </div>
-
+    
             <div className="footer-middle">
               <div className="footer-section">
                 <h4>WHAT WE DO</h4>
@@ -186,8 +202,8 @@ const Aboutus = () => {
               <div className="footer-section">
                 <h4>CONTACT US</h4>
                 <ul>
-                  <li><FaPhoneAlt /> <span>+91 99999 99999</span></li>
-                  <li><FaEnvelope /> <span>info@example.com</span></li>
+                  <li><FaPhoneAlt /> <span>+91 8252189778</span></li>
+                  <li><FaEnvelope /> <span>siyapandey642gamil.com</span></li>
                 </ul>
               </div>
             </div>

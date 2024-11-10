@@ -1,41 +1,65 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './CSS/Login.css';
-import hemant3 from '../Components/Assets/hemant3.jpg';
-import rishav from '../Components/Assets/rishav.jpg';
-import salwi from '../Components/Assets/salwi.jpg';
-import salwi1 from '../Components/Assets/salwi1.jpg';
+import banner3 from '../Components/Assets/banner3.png'; // Replace with the correct path to your image
 
-const Login = () => {
+const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Add form submission logic here (e.g., API call)
+    console.log('Form submitted:', formData);
+  };
+
   return (
-    <div className="container">
-      <div className="textSection">
-        <h1 className="title">Pain</h1>
-        <h2 className="subtitle">Free Menstruation</h2>
-        <p className="description">
-          Safe N’ Happy Periods is a project of AMODINI Foundation, a registered charitable trust in India.
-          Our mission is to empower women, fostering positive transformation, joy, and freedom.
+    <div className="contact-container">
+      <div className="contact-form">
+        <h3>Contact Us</h3>
+        <h1>How can we help?</h1>
+        <p>
+          Have a question or feedback? Fill out the form below, and we'll get back to you.
         </p>
-        <p className="taxInfo">
-          <em>All Donations are tax-exempt under Section 80G of the India Income Tax Act.</em>
-        </p>
-        <div className="buttons">
-          <button className="button">Donate now</button>
-          <button className="button">Play</button>
-        </div>
-        <div className="footerIcons">
-          <div className="icon">Workshops</div>
-          <div className="icon">Pad Donation</div>
-          <div className="icon">Volunteering</div>
-        </div>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email address"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Message"
+            value={formData.message}
+            onChange={handleChange}
+            required
+          />
+          <button type="submit">Submit</button>
+        </form>
       </div>
-      <div className="imageGallery">
-        <img src={hemant3} alt="Workshop 1" className="image" />
-        <img src={salwi} alt="Workshop 2" className="image" />
-        <img src={rishav} alt="Workshop 3" className="image" />
-        <img src={salwi1} alt="Workshop 4" className="image" />
+      <div className="contact-image">
+        <img src={banner3} alt="Children smiling" />
       </div>
     </div>
   );
 };
 
-export default Login;
+export default Contact;
