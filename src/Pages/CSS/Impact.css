@@ -468,3 +468,57 @@
   width: 200px;
   border-radius: 15px;
 }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #1e1e2f; /* Dark background */
+  color: #f4f4f9; /* Light text */
+}
+
+.textSection {
+  max-width: 1000px;
+  padding-right: 20px;
+}
+
+.title {
+  font-size: 3rem;
+  color: #ffa07a; /* Soft orange color for 'Pain' */
+}
+
+.subtitle {
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+
+.description {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.taxInfo {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #ff7f50; 
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #ff6347; 
+}

@@ -7,6 +7,16 @@
     background: linear-gradient(180deg,#fde1ff,#e1ffea22 60%);
 
   }
+  .volunteer-form-box {
+    border: 2px solid #f6f8fa; /* Blue border color */
+    border-radius: 8px;        /* Rounded corners */
+    padding: 20px;             /* Space inside the box */
+    background-color: #f9f9f9; /* Light background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 800px;          /* Limit the width */
+    margin: 0 auto;            /* Center the box */
+  }
+  
   
   .volunteer-header {
     text-align: center;

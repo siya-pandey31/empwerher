@@ -30,6 +30,8 @@ const Volunteer = () => {
       </section>
 
       <section className="volunteer-form">
+    
+      <div className="volunteer-form-box">
         <iframe
           src="https://docs.google.com/forms/d/e/1FAIpQLSdNUH-LVevReKvaFui_pyGyJa-vvv6ZzsR9R0jtiD9TiLgDkQ/viewform?usp=sf_link"
           width="100%"
@@ -41,6 +43,7 @@ const Volunteer = () => {
         >
           Loading…
         </iframe>
+        </div>
       </section>
 
       <section className="volunteer-testimonials">

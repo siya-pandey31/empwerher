@@ -4,6 +4,7 @@ import salwi from '../Components/Assets/salwi.jpg';
 import hemant3 from '../Components/Assets/hemant3.jpg';
 import rishav from '../Components/Assets/rishav.jpg';
 import salwi1 from '../Components/Assets/salwi1.jpg';
+import { Link } from 'react-router-dom';
 
 const Ourimpact = () => {
   return (
@@ -114,30 +115,38 @@ const Ourimpact = () => {
         <p>Your support can help us expand our impact and empower more women. Donate today!</p>
         <button className="donate-button">Donate Now</button>
       </section>
-      <div className="container">
+      
+      <div>
+          <h2>Get informed now. Answers to your common questions</h2>
+        </div>
+        <div className="outer-container"data-aos="fade-right">
+    <div className="container">
       <div className="textSection">
         <h1 className="title">Pain</h1>
         <h2 className="subtitle">Free Menstruation</h2>
         <p className="description">
-         Empower Her is a project based on menusration awareness and education
+          Empower her is a project based on mensuration awareness and educational campaign .
           Our mission is to empower women, fostering positive transformation, joy, and freedom.
         </p>
-       
+        
         <div className="buttons">
-          <button className="button">Login</button>
-          <button className="button">Play</button>
+          <button className="button" aria-label="Donate Now">Login</button>
+          <button className="button" aria-label="Play Video">Play</button>
         </div>
         <div className="footerIcons">
           <div className="icon">Workshops</div>
-          <div className="icon">Login</div>
-          <div className="icon">Volunteering</div>
+          <div className="icon">Contact</div>
+           <Link to="/volunteer" className="icon">Volunteering</Link>
         </div>
       </div>
+
       <div className="imageGallery">
-        <img src={hemant3} alt="Workshop 1" className="image" />
-        <img src={salwi} alt="Workshop 2" className="image" />
-        <img src={rishav} alt="Workshop 3" className="image" />
-        <img src={salwi1} alt="Workshop 4" className="image" />
+        <img src={hemant3} alt="Empower Her Workshop - Event 1" className="image" />
+        <img src={salwi} alt="Empower Her Workshop - Event 2" className="image" />
+        <img src={rishav} alt="Empower Her Workshop - Event 3" className="image" />
+       
+        
+      </div>
       </div>
     </div>
     </div>
