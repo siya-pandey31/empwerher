@@ -8,14 +8,14 @@ import { Link } from 'react-router-dom';
 
 const Ourimpact = () => {
   return (
-    <div className="impact-container">
-      <header className="impact-header">
+    <div className="impact-container"data-aos="fade-right">
+      <header className="impact-header"data-aos="fade-right">
         
         <h1>Our Impact</h1>
         <p>Empowering women, one period at a time.</p>
       </header>
 
-      <section className="impact-stats">
+      <section className="impact-stats"data-aos="fade-right">
         <h2>Key Statistics</h2>
         <div className="stats-grid">
           <div className="stat-item"><h3>5000+</h3><p>Women Reached</p></div>
@@ -25,14 +25,14 @@ const Ourimpact = () => {
         </div>
       </section>
 
-      <section className="impact-about">
+      <section className="impact-about"data-aos="fade-right">
         <h2>Pain Free </h2>
         <h2>Shame Free Mensuration</h2>
         <p>Empower Her is a project based on Mensuration, a registered organization focused on awareness campaigns.</p>
         <p>Our mission is to empower women by providing knowledge and fostering positive transformation, joy, and freedom.</p>
         
       </section>
-      <nav className="navbar">
+      <nav className="navbar"data-aos="fade-right">
         <a href="#" className="nav-link active">Menstrual Health & Hygiene (MHH)</a>
         <a href="#" className="nav-link">POSH Act Awareness & Education</a>
         <a href="#" className="nav-link">Creating Period-Friendly Workplaces</a>
@@ -40,7 +40,7 @@ const Ourimpact = () => {
       </nav>
 
 
-      <section className="blog">
+      <section className="blog"data-aos="fade-right">
         <div className="blog-content">
           <div className="blog-text">
             <h1>Menstrual Health and Hygiene Awareness Workshops</h1>
@@ -98,7 +98,7 @@ const Ourimpact = () => {
 </section>
   </section>
 
-      <section className="testimonials">
+      <section className="testimonials"data-aos="fade-right">
         <h2>What People Are Saying</h2>
         <div className="testimonial-item">
           <p>"Empower Her has made me feel more confident and informed about my health. It's an amazing initiative!"</p>
@@ -110,7 +110,7 @@ const Ourimpact = () => {
         </div>
       </section>
 
-      <section className="call-to-action">
+      <section className="call-to-action"data-aos="fade-right">
         <h2>Help Us Reach More Women</h2>
         <p>Your support can help us expand our impact and empower more women. Donate today!</p>
         <button className="donate-button">Donate Now</button>

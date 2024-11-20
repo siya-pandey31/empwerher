@@ -1,51 +1,129 @@
-/* PeriodTracker.css */
-.period-tracker {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-  }
-  
-  h1, h2 {
-    text-align: center;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  form div {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  label {
-    margin-right: 10px;
-  }
-  
-  button {
-    padding: 10px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  li {
-    margin: 5px 0;
-  }
-  
+/* Overall Page Styling */
+.period-tracker-container {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  background-color: #fff5f7;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Section */
+.tracker-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tracker-header h1 {
+  color: #d63384;
+}
+
+.tracker-header p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Tracker Section */
+.tracker-section {
+  margin-bottom: 30px;
+}
+
+.tracker-section h2 {
+  color: #d63384;
+}
+
+.tracker-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.tracker-form label {
+  font-size: 1rem;
+  color: #555;
+}
+
+.tracker-form input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.tracker-form button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  color: white;
+  background-color: #d63384;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tracker-form button:hover {
+  background-color: #e677b6;
+}
+
+.tracker-result {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* Education Section */
+.education-section h2 {
+  color: #d63384;
+}
+
+.education-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.tips-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.tips-list li {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+/* FAQ Section */
+.faq-section h2 {
+  color: #d63384;
+  margin-bottom: 15px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-item h3 {
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #d63384;
+  margin-bottom: 5px;
+}
+
+.faq-item p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+  margin: 0;
+  display: none;
+}
+
+.faq-item h3:hover {
+  text-decoration: underline;
+}
+
+/* Show/Hide FAQ Answer */
+.faq-item:hover p {
+  display: block;
+}

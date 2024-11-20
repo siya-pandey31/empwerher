@@ -36,14 +36,14 @@ export const Hero = () => {
   };
  
   return (
-    <div className='hero'>
+    <div className='hero'data-aos="fade-right">
       <div className="hero-left"data-aos="fade-right">
      <div className="banner"data-aos="fade-right">
-      <img src={banner} alt="Women participating in menstruation awareness activities" />
+      <img src={banner} alt="Women participating in menstruation awareness activities" data-aos="fade-right"/>
       </div>
         <h2>Creating Awareness on Shame-Free and Pain-Free Menstruation</h2>
 
-        <div className="pic1-container"data-aos="fade-left">
+        <div className="pic1-container"data-aos="fade-right">
           <div className="pic1-text">
             <p>A Social Impact Initiative, Empower Her is a humble step towards a shame-free and pain-free menstruation time. We create awareness on different aspects of menstruation for adolescent girls & women through talks & workshops.</p>
             <p>We have features like a Period tracker, chatbot, and many more.</p>
@@ -216,7 +216,7 @@ export const Hero = () => {
   
  
 
-      <section className="testimonials">
+      <section className="testimonials"data-aos="fade-right">
         <h2>What People Are Saying</h2>
         <div className="testimonial-item">
           <p>"Empower Her has made me feel more confident and informed about my health. It's an amazing initiative!"</p>
@@ -228,13 +228,13 @@ export const Hero = () => {
         </div>
       </section>
 
-      <section className="call-to-action">
+      <section className="call-to-action"data-aos="fade-right">
         <h2>Help Us Reach More Women</h2>
         <p>Your support can help us expand our impact and empower more women. Donate today!</p>
         <button className="donate-button">Contact Now</button>
       </section>
 
-      <footer className="footer-container">
+      <footer className="footer-container"data-aos="fade-right">
       <div className="footer-main">
        
         <div className="footer-left">

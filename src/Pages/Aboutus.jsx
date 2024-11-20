@@ -50,7 +50,7 @@ const Aboutus = () => {
   return (
     
 
-      <div className="aboutus-container">
+      <div className="aboutus-container"data-aos="fade-right">
         <div className="aboutus-box" data-aos="fade-right">
           <div className="aboutus-main-section">
             <div className="aboutus-text">

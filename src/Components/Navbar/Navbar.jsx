@@ -5,6 +5,11 @@ import logo from '../Assets/logo.png';
 
 export const Navbar = () => {
   const [menu, setMenu] = useState("Home");
+  const [isVisible, setIsVisible] = useState(false);
+
+  const handleOpen = () => setIsVisible(true);
+  const handleClose = () => setIsVisible(false);
+
 
   return (
     <div className='navbar'>
@@ -35,16 +40,49 @@ export const Navbar = () => {
           <Link style={{ textDecoration: 'none' }} to='/periodtracker'>PERIOD TRACKER</Link>
           {menu === "periodtracker" ? <hr /> : <></>}
         </li>
-        <li onClick={() => { setMenu("faq") }}>
-          <Link style={{ textDecoration: 'none' }} to='/chatbot'>FAQ</Link>
-          {menu === "faq" ? <hr /> : <></>}
-        </li>
         <li onClick={() => { setMenu("contact") }}>
           <Link style={{ textDecoration: 'none' }} to='/contact'>CONTACT</Link>
           {menu === "contact" ? <hr /> : <></>}
         </li>
         <li onClick={() => { setMenu("login") }}>
-          <Link style={{ textDecoration: 'none' }} to='/login'><button>Login</button></Link>
+          <Link style={{ textDecoration: 'none' }} to='/login'>
+          <button onClick={handleOpen} className="get-in-touch-button">
+        Get in Touch
+        </button>
+              
+ 
+    <div>
+      {/* Button to open the form */}
+      
+
+      {/* Conditional rendering of the modal */}
+      {isVisible && (
+        <div className="modal-overlay">
+          <div className="modal-content">
+          <button onClick={handleClose} className="close-button">
+            ×
+              </button>
+            <form>
+              <label>
+                Name:
+                <input type="text" name="name" placeholder="Your Name" />
+              </label>
+              <label>
+                Email:
+                <input type="email" name="email" placeholder="Your Email" />
+              </label>
+              <label>
+                Message:
+                <textarea name="message" placeholder="Your Message"></textarea>
+              </label>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      )}
+    </div>
+
+           </Link>
           {menu === "login" ? <hr /> : <></>}
         </li>
       </ul>
