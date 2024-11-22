@@ -159,7 +159,7 @@ const Aboutus = () => {
                 <img src={logo} alt="Safe N' Happy Periods Logo" style={{ width: '50px', height: 'auto' }} />
               </div>
               <p className="footer-description">
-                Safe N' Happy Periods aims to foster a shame-free, dignified, and sustainable menstruation experience for women.
+                Empower her aims to foster a shame-free, dignified, and sustainable menstruation experience for women.
               </p>
               <div className="social-icons">
                 <h3>Follow Us</h3>

@@ -534,12 +534,14 @@ article.info-item {
 
 .blog-photo {
   flex: 0 0 auto; /* Prevents the photo from shrinking */
-  margin-right: 20px; /* Adds space between the image and text */
+  margin-right: 20px; /* /* Adds space between the image and text */
 }
 .blog-photo{
   margin-bottom: 20px;
   margin-right: 0;
 }
+
+
 
 .blog-photo img {
   max-width: 90%;
